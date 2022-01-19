@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro e Login</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+          <div class="title login">Cadastro e Login</div>
+          <div class="title signup">Cadastro</div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Cadastrar</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="#" class="login">
+              <div class="field">
+                <input type="text" placeholder="Endereço de email" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Senha" required>
+              </div>
+              <div class="pass-link"><a href="#">Esqueceu a senha?</a></div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login" id=logar>
+              </div>
+              <div class="signup-link">Ainda nao tem um cadastro? <a href="">Cadastre-se</a></div> 
+              <script>
+                var Cadastrar = document.getElementById("cadastro");
+                Login.addEventListener('click', function(){
+                  alert("Usuario cadastrado!")
+                })
+              </script>
+            </form>
+            <form action="#" class="signup">
+              <div class="field">
+                <input type="text" placeholder="Login" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Senha" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Confirme a senha" required>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login" id=logar>
+                <script>
+                  var Login = document.getElementById("logar");
+                  Login.addEventListener('click', function(){
+                    alert("Usuario conectado!")
+                  })
+                </script>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+</body>
+</html>
+
